@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic page metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta tags -->
+    <title>Project Name</title>
+    <meta
+      name="description"
+      content="Replace this description with a concise summary of your project."
+    />
+    <meta name="keywords" content="research, project, template" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Project Name" />
+    <meta
+      property="og:description"
+      content="Replace this with a short description of your project."
+    />
+    <meta property="og:image" content="images/carousel1.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/carousel1.png" />
+
+    <!-- Bulma CSS framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Academicons for arXiv icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+
+    <!-- Bulma-carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css"
+    />
+
+    <!-- Bulma-carousel JS  -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"
+    ></script>
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Optional JavaScript dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+    <!-- Font Awesome JS (SVG core) -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+    ></script>
+
+    <!-- Your custom JavaScript -->
+    <script defer src="js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav
+      class="navbar is-fixed-top is-white"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-semibold" href="#overview">
+          Project&nbsp;Name
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#overview" class="navbar-item">Home</a>
+          <a href="#abstract" class="navbar-item">Abstract</a>
+          <a href="#results" class="navbar-item">Results</a>
+          <a href="#video" class="navbar-item">Video</a>
+          <a href="#poster" class="navbar-item">Poster</a>
+          <a href="#team" class="navbar-item">Team</a>
+          <a href="#citation" class="navbar-item">Citation</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / overview section -->
+    <section
+      id="overview"
+      class="hero is-medium has-background-primary-gradient"
+    >
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-1 has-text-white">Project Title</h1>
+          <h2 class="subtitle is-4 has-text-white">
+            A concise tagline or one‑sentence description goes here
+          </h2>
+          <p class="project-authors">
+            <!-- Authors: include links and equal contribution markers as needed -->
+            <a href="#" target="_blank" class="has-text-white"
+              >First&nbsp;Author</a
+            ><sup>*</sup>,
+            <a href="#" target="_blank" class="has-text-white"
+              >Second&nbsp;Author</a
+            ><sup>*</sup>,
+            <a href="#" target="_blank" class="has-text-white"
+              >Third&nbsp;Author</a
+            >
+          </p>
+          <p class="project-affiliation has-text-white mt-1">
+            Institution Name · Conference&nbsp;Year
+          </p>
+          <!-- Buttons for paper/code/arXiv links -->
+          <div class="buttons is-centered mt-4">
+            <a
+              class="button is-primary is-light is-rounded"
+              href="https://arxiv.org/pdf/your-paper-id.pdf"
+              target="_blank"
+            >
+              <span class="icon"><i class="fas fa-file-alt"></i></span>
+              <span>Paper</span>
+            </a>
+            <a
+              class="button is-primary is-light is-rounded"
+              href="https://github.com/your-repo"
+              target="_blank"
+            >
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+            <a
+              class="button is-primary is-light is-rounded"
+              href="https://arxiv.org/abs/your-paper-id"
+              target="_blank"
+            >
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>arXiv</span>
+            </a>
+          </div>
+          <p class="is-size-7 has-text-white mt-2">
+            <sup>*</sup>Indicates equal contribution
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract section -->
+    <section id="abstract" class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title has-text-centered">Abstract</h2>
+        <div class="content is-medium">
+          <p>
+            This work introduces a novel approach to [your research topic],
+            combining [key method 1] with [key method 2] to address [specific
+            problem]. We demonstrate through [type of experiment or analysis]
+            that our method achieves [primary result], outperforming existing
+            techniques by [quantitative metric or qualitative benefit]. These
+            findings offer new insights into [broader field or application],
+            paving the way for future developments in [potential next steps].
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video section -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Project&nbsp;Video</h2>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="video-container">
+              <!-- Replace the YouTube link with your own video -->
+              <iframe
+                src="https://www.youtube.com/embed/pjNI9K1D_xo?si=hzu0wIjeshQpEUEa"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results carousel section -->
+    <section id="results" class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Results</h2>
+        <!-- Image carousel using Bulma Carousel extension -->
+        <div
+          class="carousel carousel-animated carousel-animate-slide"
+          data-autoplay="true"
+        >
+          <div class="carousel-container">
+            <div class="carousel-item has-background is-active">
+              <img
+                class="is-background"
+                src="images/carousel1.png"
+                alt="First result"
+              />
+              <div class="title is-5 has-text-white has-text-centered">
+                First result description
+              </div>
+            </div>
+            <div class="carousel-item has-background">
+              <img
+                class="is-background"
+                src="images/carousel2.png"
+                alt="Second result"
+              />
+              <div class="title is-5 has-text-white has-text-centered">
+                Second result description
+              </div>
+            </div>
+            <div class="carousel-item has-background">
+              <img
+                class="is-background"
+                src="images/carousel3.png"
+                alt="Third result"
+              />
+              <div class="title is-5 has-text-white has-text-centered">
+                Third result description
+              </div>
+            </div>
+          </div>
+          <div class="carousel-navigation is-overlay">
+            <div class="carousel-nav-left">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="carousel-nav-right">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poster / PDF section -->
+    <section id="poster" class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Poster</h2>
+        <iframe src="pdfs/Sample.pdf" width="100%" height="500px">
+          <!-- If the PDF fails to load, provide a fallback link -->
+          <p>
+            Your browser does not support embedded PDFs. You can download the
+            poster <a href="pdfs/Sample.pdf">here</a>.
+          </p>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Team section -->
+    <section id="team" class="section has-background-light">
+      <div class="container">
+        <h2 class="title has-text-centered">Our Team</h2>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="images/team1.jpg" alt="Team member 1" />
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <p class="title is-5">Person&nbsp;One</p>
+                <p class="subtitle is-6">Role&nbsp;/&nbsp;Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="images/team2.jpg" alt="Team member 2" />
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <p class="title is-5">Person&nbsp;Two</p>
+                <p class="subtitle is-6">Role&nbsp;/&nbsp;Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="images/team3.jpg" alt="Team member 3" />
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <p class="title is-5">Person&nbsp;Three</p>
+                <p class="subtitle is-6">Role&nbsp;/&nbsp;Description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citation section -->
+    <section id="citation" class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Citation</h2>
+        <div class="content">
+          <pre class="box">
+@inproceedings{yourpaper,
+  title={Your Paper Title},
+  author={Author, First and Author, Second and Author, Third},
+  booktitle={Conference Name},
+  year={2025},
+  url={https://arxiv.org/abs/your-paper-id}
+}
+        </pre
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-white">
+      <div class="content has-text-centered">
+        <p>
+          © 2025&nbsp;<strong>Project&nbsp;Name</strong>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts: Bulma Carousel and custom JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/*
+ * Custom styles for the academic project template
+ *
+ * This stylesheet extends the Bulma framework with a few
+ * site‑specific tweaks. Feel free to customize the colours,
+ * typography and spacing to match your project’s branding. To
+ * maintain a clean, uncluttered layout, leverage white space and
+ * ensure that content is grouped logically【939596286586476†L105-L115】.
+ */
+
+/* Gradient background for the hero section */
+.has-background-primary-gradient {
+  background-image: linear-gradient(135deg, #4f44c5 0%, #00c9ff 100%);
+  color: #ffffff;
+}
+
+/* Ensure the navbar text and burger icon are visible over the hero */
+.navbar.is-white .navbar-item {
+  color: #363636;
+}
+
+/* Custom video container with 16:9 aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  background-color: #000; /* fallback for audio‑only videos */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Tweak preformatted citation box */
+pre.box {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Footer styling */
+.footer {
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Smooth scroll behaviour for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive typography for the hero section. On narrow screens reduce
+   the font sizes to prevent overflow and ensure readability. */
+@media (max-width: 768px) {
+  #overview .title {
+    font-size: 2rem;
+  }
+  #overview .subtitle {
+    font-size: 1.25rem;
+  }
+  #overview .project-authors,
+  #overview .project-affiliation {
+    font-size: 0.9rem;
+  }
+}
+
+/* Adjust hero padding based on screen size. Provide more breathing
+   room on larger devices and tighter spacing on small screens. */
+#overview .hero-body {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 769px) {
+  #overview .hero-body {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
