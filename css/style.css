@@ -58,6 +58,83 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --------------------------------------------------------------------------
+ * Custom carousel styling
+ *
+ * The original template relied on the Bulma Carousel extension loaded from a
+ * remote CDN. Unfortunately that dependency wasn’t loading properly in the
+ * provided environment, which meant the “Results” image slider never
+ * appeared. To ensure the carousel always works, a very simple slider is
+ * implemented in `js/script.js`. The styles below provide a minimal layout
+ * so that exactly one slide is visible at a time and the navigation arrows
+ * overlay the images. Feel free to customise the colours or spacing as
+ * desired.
+ *
+ * Each `.carousel` container is positioned relatively. Its child
+ * `.carousel-item` elements are hidden by default; the currently visible
+ * slide is given the `.is-active` modifier and displayed as a block. Images
+ * inside the carousel automatically scale to the width of their container
+ * while preserving aspect ratio.
+ */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hide all slides by default */
+.carousel-item {
+  display: none;
+}
+
+/* Show only the active slide */
+.carousel-item.is-active {
+  display: block;
+}
+
+/* Ensure carousel images fill their parent horizontally */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Position carousel navigation arrows centrally over the slider */
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  pointer-events: none;
+}
+
+/* Style for individual navigation buttons */
+.carousel-nav-left,
+.carousel-nav-right {
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: #363636;
+  font-size: 1rem;
+}
+
+/* Increase icon size inside navigation arrows */
+.carousel-nav-left i,
+.carousel-nav-right i {
+  pointer-events: none;
+}
+
 /* Responsive typography for the hero section. On narrow screens reduce
    the font sizes to prevent overflow and ensure readability. */
 @media (max-width: 768px) {
