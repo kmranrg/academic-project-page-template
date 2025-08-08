@@ -7,7 +7,7 @@ This repository contains a clean, responsive template for academic project pages
 - ✅ **Responsive Navbar** — Collapsible burger menu for mobile devices.
 - 🎯 **Hero Section** — Title, authors, and quick-access buttons to paper/code/arXiv.
 - 📄 **Abstract Section** — Clean area for your project summary.
-- 📊 **Results Carousel** — Built using [Bulma Carousel](https://github.com/Wikiki/bulma-carousel), lets you showcase experiment figures.
+- 📊 **Results Carousel** — Built using Bulma Carousel, lets you showcase experiment figures.
 - 🎥 **Video Section** — Embed a YouTube or local demo video.
 - 🧾 **Poster Section** — Displays a full-width embedded PDF using `<iframe>`, responsive and optimized for all screens.
 - 👥 **Team Section** — Displays collaborators using consistent cards with photos and text.
