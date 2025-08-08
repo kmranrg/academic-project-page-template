@@ -67,8 +67,8 @@
       <div class="navbar-end">
         <a href="#overview" class="navbar-item">Home</a>
         <a href="#abstract" class="navbar-item">Abstract</a>
-        <a href="#results" class="navbar-item">Results</a>
         <a href="#video" class="navbar-item">Video</a>
+        <a href="#results" class="navbar-item">Results</a>
         <a href="#poster" class="navbar-item">Poster</a>
         <a href="#team" class="navbar-item">Team</a>
         <a href="#citation" class="navbar-item">Citation</a>
@@ -154,33 +154,26 @@
   <section id="results" class="section">
     <div class="container">
       <h2 class="title has-text-centered">Results</h2>
-      <!-- Image carousel using Bulma Carousel extension -->
-      <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
+      <div class="carousel carousel-animated carousel-animate-slide custom-carousel" data-autoplay="true">
         <div class="carousel-container">
           <div class="carousel-item has-background is-active">
-            <img class="is-background" src="images/carousel1.png" alt="First result" />
-            <div class="title is-5 has-text-white has-text-centered">
-              First result description
-            </div>
+            <img class="is-background carousel-img" src="images/carousel1.png" alt="First result" />
+            <div class="title is-5 has-text-white has-text-centered">First result description</div>
           </div>
           <div class="carousel-item has-background">
-            <img class="is-background" src="images/carousel2.png" alt="Second result" />
-            <div class="title is-5 has-text-white has-text-centered">
-              Second result description
-            </div>
+            <img class="is-background carousel-img" src="images/carousel2.png" alt="Second result" />
+            <div class="title is-5 has-text-white has-text-centered">Second result description</div>
           </div>
           <div class="carousel-item has-background">
-            <img class="is-background" src="images/carousel3.png" alt="Third result" />
-            <div class="title is-5 has-text-white has-text-centered">
-              Third result description
-            </div>
+            <img class="is-background carousel-img" src="images/carousel3.png" alt="Third result" />
+            <div class="title is-5 has-text-white has-text-centered">Third result description</div>
           </div>
         </div>
         <div class="carousel-navigation is-overlay">
-          <div class="carousel-nav-left">
+          <div class="carousel-nav-left is-flex">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
-          <div class="carousel-nav-right">
+          <div class="carousel-nav-right is-flex">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
         </div>
@@ -192,13 +185,14 @@
   <section id="poster" class="section">
     <div class="container">
       <h2 class="title has-text-centered">Poster</h2>
-      <iframe src="pdfs/Sample.pdf" width="100%" height="500px">
-        <!-- If the PDF fails to load, provide a fallback link -->
-        <p>
-          Your browser does not support embedded PDFs. You can download the
-          poster <a href="pdfs/Sample.pdf">here</a>.
-        </p>
-      </iframe>
+      <div class="pdf-wrapper">
+        <iframe src="pdfs/Sample.pdf" class="pdf-frame" frameborder="0">
+          <p>
+            Your browser does not support embedded PDFs.
+            You can download the poster <a href="pdfs/Sample.pdf">here</a>.
+          </p>
+        </iframe>
+      </div>
     </div>
   </section>
 

@@ -163,3 +163,57 @@ html {
     padding-bottom: 6rem;
   }
 }
+
+/* Make carousel images smaller and responsive */
+.carousel-img {
+  max-width: 70%;
+  /* max-height: 400px; */
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Position carousel arrows in the middle of the image */
+.carousel-navigation {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel-nav-left,
+.carousel-nav-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-nav-left {
+  left: 10px;
+}
+
+.carousel-nav-right {
+  right: 10px;
+}
+
+.pdf-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 1000px;
+  border: none;
+}
+
+/* Optional: Limit width on large screens only */
+@media screen and (min-width: 1024px) {
+  .pdf-wrapper {
+    max-width: 70%;
+  }
+}
